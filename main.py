@@ -3,7 +3,6 @@ import sqlite3
 import boto3
 from botocore.exceptions import ClientError
 import logging
-import sys
 
 logging.basicConfig()
 logger = logging.getLogger()
