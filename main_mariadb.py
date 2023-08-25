@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     try:
         # Connect AWS DynamoDB and SSM
-        session = boto3.Session(profile_name='wijernet-prod')
+        session = boto3.Session(profile_name='default')
         ddb = session.resource('dynamodb', region_name=awsregion)
         table = ddb.Table(dynamodb_database)
         ssm = session.client('ssm', region_name=awsregion)
